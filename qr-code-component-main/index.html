@@ -28,8 +28,6 @@
       .attribution {
         font-size: 11px;
         text-align: center;
-        position: relative;
-        bottom: 0;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -37,9 +35,12 @@
 
       body {
         background: var(--Light_gray-);
+        display: grid;
+        place-content: center;
       }
       .container {
-        margin: 25vh auto;
+        /* display: grid; */
+        margin: 2rem 0 0.5rem;
         width: 260px;
         padding: 1rem;
         background-color: var(--white-);
@@ -49,7 +50,7 @@
       }
       @media (max-width: 400px) {
         .container {
-          margin: 4em auto;
+          margin: 4rem 0 0.5rem;
         }
       }
       .container > img {
